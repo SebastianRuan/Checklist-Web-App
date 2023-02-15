@@ -98,9 +98,52 @@ class TodoItem extends React.Component {
 
     render(){
       return(
-        <input type="text" className="todo-item" ></input>
+        <div>
+          <input type="text" className="todo-item" disabled/>
+          <EditButton/>
+          <CompleteButton/>
+          <DeleteButton/>
+        </div>
+        
       )
     }
+ }
+
+ class EditButton extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return(
+      <i class="bi bi-pencil"/>
+    )
+  }
+ }
+
+
+ class CompleteButton extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return(
+      <i class="bi bi-bookmark-check"/>
+    )
+  }
+ }
+
+ class DeleteButton extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return(
+      <i class="bi bi-trash"/>
+    )
+  }
  }
 
 

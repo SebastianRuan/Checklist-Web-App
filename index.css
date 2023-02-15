@@ -7,6 +7,11 @@ hr{
     margin-bottom: 0px !important;
 }
 
+i{
+    cursor:pointer;
+    margin-right: 10px;
+}
+
 #page{
     height: 100%;
      margin: 0 !important;  /* remove negative margins for global row */
@@ -50,6 +55,7 @@ hr{
     width: 100%;
     height: 50px;
     margin-top: 15px;
+    margin-right: -75px;
 }
 
 .todo-item:focus{
