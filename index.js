@@ -78,9 +78,16 @@ class AddBar extends React.Component {
     super(props);
   }
 
+  add_item = () => {
+    console.log("adding item")
+  }
+
   render(){
     return(
-      <input type="text" id="new-todo" placeholder="Enter new todo..."></input>
+      <div>
+        <input type="text" id="new-todo" placeholder="Enter new todo..."></input>
+        <i class="bi bi-plus" onClick={this.add_item}></i>
+      </div>
     )
   }
 
@@ -93,7 +100,6 @@ class TodoItem extends React.Component {
   }
     
     handleChange = (e) => {
-      console.log("bilbo")
     }
 
     render(){

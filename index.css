@@ -48,6 +48,8 @@ i{
 
 #new-todo{
     width: 100%;
+    display:inline;
+    margin-right:-23px;
 }
 
 
