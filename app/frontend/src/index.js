@@ -79,6 +79,9 @@ class AddBar extends React.Component {
   }
 
   add_item = () => {
+    fetch("http://localhost:3000/add", {mode: 'no-cors'}).then(() => {
+      console.log("success")
+    })
     console.log("adding item")
   }
 
